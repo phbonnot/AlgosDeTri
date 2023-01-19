@@ -4,7 +4,7 @@ import java.util.Collections;
 
 public class Launch {
 
-    public static ArrayList<Integer> plusGrandesValeurs(int[] t, int n){
+    public static ArrayList<Integer> pbonnot(int[] t, int n){
         ArrayList<Integer> plusGrands=new ArrayList();
         for(int i=0;i<n;i++){
             plusGrands.add(i);
@@ -40,9 +40,8 @@ public class Launch {
             tab[i]=(int)(Math.random()*10000-5000);
         }
         start=System.nanoTime();
-        plusGrandesValeurs(tab,100);
+        pbonnot(tab,100);
         end=System.nanoTime();
         System.out.println((end-start)/1000000);
-
     }
 }
